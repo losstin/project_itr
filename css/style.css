@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background: #242B33;
+    font-size: 16px;
+    min-width: 280px;
+    overflow-x: hidden;
+    height: 900vh;
+}
+
+.font1 {
+    font-family: 'Raleway', sans-serif;
+}
+.font2 {
+    font-family: 'Playfair Display', serif;
+}
+.font3 {
+    font-family: 'Roboto', sans-serif;
+}
+.text-accent {
+    color: #D4C17F;
+}
+
+/* HEADER */
+.header {
+    background: url("../img/header.jpg") center / cover;
+    min-height: 582px;
+    background-attachment: fixed;
+}
+
+.header_content {
+    text-align: center;
+}
+.header_content h1 {
+    margin-top: 7rem;
+}
+.header_icon {
+    margin-top: 4rem;
+}
+.header_contacts {
+    margin-top: 7rem;
+}
+.header_contacts a{
+    text-decoration: none;
+    color: #fff;
+}
+.header_contacts_tel {
+    margin-left: 3rem;
+}
+
+/* MAIN */
+.main {
+    position: relative;
+}
+.icons_container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon_block{
+    width: 25%;
+    text-align: center;
+    min-height: 225px;
+    margin-top: 4rem;
+}
+.icon_block svg {
+    max-width: 70px;
+    min-height: 60px;
+    margin-bottom: 1.5rem;
+}
+.img_block img{
+    position: absolute;
+    top: 20%;
+    right: 50px;
+    max-width: 15%;
+    min-height: 25%;
+}
+
+
+/* APARTMENT SECTION */
+.apartment_section h1 {
+    margin-top: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.apartment1 {
+    background: url("../img/photo1.png");
+    min-height: 300px;
+}
+.apartment2 {
+    background: url("../img/photo2.png");
+    min-height: 300px;
+}
+
+.apartment {
+    position: relative;
+}
+.apartment p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+/* Заканчивается appartment */
+
+
+
+/* Начинается form_section */
+.form_section{
+    padding-top: 120px;
+    background: url(../img/Rectangle\ \(2\).jpg);
+}
+
+
+/* Стили для текстов */
+.form_title{
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+/* accent */
+color: #D4C17F;
+}
+.form_text{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+color: #FFFFFF;
+}
+
+/* Лейбл и инпуты и баттон в конце!*/
+.form_label{
+    width: 100%;
+}
+.form_label-tell{
+    width: 100%;
+}
+.form_input{
+width: 100%;
+height: 50px;
+text-align: center;
+background: #FFFFFF;
+opacity: 0.2;
+}
+.form_input-tell{
+width: 100%;
+height: 50px;
+text-align: center;
+background: #FFFFFF;
+opacity: 0.2;
+}
+.form_button{
+width: 100%;
+height: 50px;
+text-align: center;
+/* accent */
+background: #D4C17F;
+}
+
+
+
+/* Медиаскрины тоесть адаптация */
+@media(max-width: 600px){
+    .icon_block{
+        width: 50%;
+    }
+}
+@media(max-width:575px){
+    .form_title{
+        text-align: center;
+    }
+}
